@@ -10,7 +10,7 @@ public class FuncClass {
     }
 
     public static void printSomething() throws InterruptedException {
-        int i = 3600;
+        int i = 180;
         while (i-- >= 0) {
             printHello(i);
             Thread.sleep(1000);

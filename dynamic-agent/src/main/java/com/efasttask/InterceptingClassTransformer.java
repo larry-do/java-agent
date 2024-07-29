@@ -24,7 +24,6 @@ public class InterceptingClassTransformer implements ClassFileTransformer {
     @Override
     public byte[] transform(ClassLoader loader, String className, Class<?> classBeingRedefined, ProtectionDomain protectionDomain, byte[] classfileBuffer) throws IllegalClassFormatException {
         byte[] byteCode = classfileBuffer;
-        System.out.println("Transforming class " + className);
         if (className.equals("com/efasttask/FuncClass")) {
             System.out.println("Found the class " + className);
             try {
@@ -33,9 +32,13 @@ public class InterceptingClassTransformer implements ClassFileTransformer {
                 CtClass ctClass = classPool.makeClass(new ByteArrayInputStream(classfileBuffer));
                 CtMethod[] methods = ctClass.getDeclaredMethods();
 
+                // seems if a method is busy, it cannot be intercepted
                 for (CtMethod method : methods) {
                     if (method.getName().equals("printHello")){
                         method.insertAfter("System.out.println(\"Hello from Java Agent\");");
+                    }
+                    if (method.getName().equals("printSomething")) {
+                        method.insertAfter("printGoodBye();");
                     }
                 }
                 byteCode = ctClass.toBytecode();

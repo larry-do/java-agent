@@ -8,7 +8,7 @@ public class DynamicJavaAgent {
         System.out.println("agentmain method called with args " + agentArgs);
         for (Class<?> loadedClass : inst.getAllLoadedClasses()) {
             if (loadedClass.getName().equals("com.efasttask.FuncClass")) {
-                System.out.println("Found class " + loadedClass.getName());
+                System.out.println("Found loaded class " + loadedClass.getName());
                 try {
                     InterceptingClassTransformer interceptingClassTransformer = new InterceptingClassTransformer();
                     interceptingClassTransformer.init();
