@@ -16,13 +16,13 @@ public class Attacher {
         String agentPath = args[1]; // Path to the agent JAR file
 
         try {
-            System.out.println("Attached VM to PID " + pid);
+            System.out.println("Attach VM to PID " + pid);
             VirtualMachine vm = VirtualMachine.attach(pid);
             System.out.println("Load agent " + agentPath);
             vm.loadAgent(agentPath);
+            System.out.println("Agent attached successfully.");
             System.out.println("Detach");
             vm.detach();
-            System.out.println("Agent attached successfully.");
         } catch (AttachNotSupportedException | IOException | AgentLoadException | AgentInitializationException e) {
             throw new RuntimeException(e);
         }

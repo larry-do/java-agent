@@ -11,8 +11,8 @@
     <modules>
         <module>example-application</module>
         <module>static-agent</module>
-        <module>attacher</module>
-        <module>dymanic-agent</module>
+        <module>dynamic-agent</module>
+        <module>agent-attacher</module>
     </modules>
 
     <properties>

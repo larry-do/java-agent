@@ -46,7 +46,7 @@
                     <appendAssemblyId>true</appendAssemblyId>
                     <archive>
                         <manifestEntries>
-                            <Premain-Class>com.efasttask.javaagent.PremainJavaAgent</Premain-Class>
+                            <Premain-Class>com.efasttask.PremainJavaAgent</Premain-Class>
                             <Permissions>all-permissions</Permissions>
                         </manifestEntries>
                     </archive>

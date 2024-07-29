@@ -3,10 +3,13 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/agent-application/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agent-application/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agent-attacher/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agent-attacher/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/attacher/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/attacher/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dymanic-agent/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dymanic-agent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamic-agent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamic-agent/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/example-application/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/example-application/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
